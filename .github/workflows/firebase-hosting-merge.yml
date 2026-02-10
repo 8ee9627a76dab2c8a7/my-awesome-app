@@ -11,6 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Create environment files
+        run: |
+          mkdir -p src/environments
+          cat > src/environments/environment.ts <<'EOF'
+          ${{ secrets.ENVIRONMENT_TS }}
+          EOF
+          cat > src/environments/environment.prod.ts <<'EOF'
+          ${{ secrets.ENVIRONMENT_PROD_TS }}
+          EOF
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
