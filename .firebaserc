@@ -2,7 +2,8 @@
   "projects": {
     "default": "my-awesome-app-1fc0e",
     "staging": "my-awesome-app-1fc0e",
-    "production": "my-awesome-app-1fc0e"
+    "production": "my-awesome-app-production",
+    "development": "my-awesome-app-dev-c5a5e"
   },
   "targets": {},
   "etags": {}
