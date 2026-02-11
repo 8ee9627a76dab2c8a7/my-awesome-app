@@ -19,6 +19,9 @@ jobs:
           cat > src/environments/environment.ts <<'EOF'
           ${{ secrets.ENVIRONMENT_DEV_TS }}
           EOF
+          cat > src/environments/environment.development.ts <<'EOF'
+          ${{ secrets.ENVIRONMENT_DEV_TS }}
+          EOF
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
