@@ -3,7 +3,7 @@ import { HomePageComponent } from './visitor/home/home.page.component';
 
 export const routes: Routes = [
     {
-    title: 'Home',
+    title: 'My productivity planner',
     path: '',
     component: HomePageComponent
   }
