@@ -1,8 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
-import { environment } from '../../environments/environment';
-import { Observable, of, switchMap, tap } from 'rxjs';
-import { User } from '../models/user.model';
+import { environment } from '../../../environments/environment';
+import { Observable, tap } from 'rxjs';
 
 interface FirebaseResponseSignup {
   idToken: string;
