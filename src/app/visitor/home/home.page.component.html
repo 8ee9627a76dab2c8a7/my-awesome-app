@@ -1,0 +1,8 @@
+<app-home-banner 
+    [title]="title"
+    [description]="description"
+    [button]="button"
+    (clicked)="onBannerClicked($event)"
+/>
+
+<app-feature-card-list  [featureCardList]="featureCardList()" />

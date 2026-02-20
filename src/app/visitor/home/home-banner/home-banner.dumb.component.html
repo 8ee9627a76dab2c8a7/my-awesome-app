@@ -1,0 +1,13 @@
+<div class="d-flex align-items-center justify-content-center text-white h-100">
+  <div class="text-center px-4">
+    <h1 data-testid="banner-title" class="display-4 fw-bold">{{ title() }}</h1>
+    <p data-testid="banner-description" class="lead mt-3">{{ description() }}</p>
+    <button
+      data-testid="banner-button"
+      type="button"
+      class="btn btn-primary btn-lg mt-4"
+      (click)="clicked.emit()">
+      {{ button() }}
+    </button>
+  </div>
+</div>
